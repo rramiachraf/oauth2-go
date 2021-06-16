@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Applications</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="font-family: poppins,sans-serif;" class="min-h-screen">
+    <div class="bg-blue-400 h-16 flex justify-between items-center px-40">
+        <h1 class="font-bold text-white text-lg uppercase">OAUTH 2.0</h1>
+        <a href="/oauth2/apps" class="text-blue-400 font-medium bg-white px-4 py-1 rounded shadow-sm uppercase">My
+            Apps</a>
+    </div>
+    
+    <ul>
+        {{range .app}}
+        <li>d</li>
+        {{end}}
+    </ul>
+</body>
+
+</html>
