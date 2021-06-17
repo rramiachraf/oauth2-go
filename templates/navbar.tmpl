@@ -1,3 +1,4 @@
+{{define "navbar"}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,17 +14,13 @@
 </head>
 
 <body style="font-family: poppins,sans-serif;" class="min-h-screen">
-    <div class="bg-blue-400 h-16 flex justify-between items-center px-40">
+    <div class="bg-blue-500 h-16 flex justify-between items-center px-40">
         <h1 class="font-bold text-white text-lg uppercase">OAUTH 2.0</h1>
-        <a href="/oauth2/apps" class="text-blue-400 font-medium bg-white px-4 py-1 rounded shadow-sm uppercase">My
-            Apps</a>
+        <div class="flex gap-2">
+            <a href="/oauth2/register"
+                class="text-blue-500 font-medium bg-white px-4 py-1 rounded shadow-sm uppercase">New App</a>
+            <a href="/oauth2/apps" class="text-blue-500 font-medium bg-white px-4 py-1 rounded shadow-sm uppercase">My
+                Apps</a>
+        </div>
     </div>
-    
-    <ul>
-        {{range .app}}
-        <li>d</li>
-        {{end}}
-    </ul>
-</body>
-
-</html>
+    {{end}}

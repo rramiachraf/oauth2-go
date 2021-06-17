@@ -1,0 +1,13 @@
+{{template "navbar"}}
+<form method="POST" action="/oauth2/register" class="flex flex-col px-40 py-10 gap-1">
+    <label class="font-medium font-gray-800" for="name">Application Name</label>
+    <input type="text" name="name" id="name"
+        class="rounded px-4 py-2 border-2 text-gray-800 focus:border-blue-500 focus:border-2 mb-4" />
+    <label class="font-medium font-gray-800" for="redirect">Redirect URL</label>
+    <input type="text" name="redirect" id="redirect"
+        class="rounded px-4 py-2 border-2 text-gray-800 focus:border-blue-500 focus:border-2 mb-4" />
+    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded font-semibold">Create</button>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{{template "navbar"}}
+<div class="mt-6 px-40">
+    <ul class="flex justify-between items-center bg-blue-500 h-12 px-10">
+        <li class="text-white font-semibold uppercase">Name</li>
+        <li class="text-white font-semibold uppercase">Client ID</li>
+        <li class="text-white font-semibold uppercase">Created at</li>
+    </ul>
+    {{range $app := .}}
+    <a href="/oauth2/app/{{$app.client_id}}">
+        <ul class="flex flex justify-between items-center px-10 py-3 bg-gray-100 border-2">
+            <li class="font-medium text-gray-900">{{$app.name}}</li>
+            <li class="text-gray-800">{{$app.client_id}}</li>
+            <li class="text-gray-800">{{$app.date}}</li>
+        </ul>
+    </a>
+    {{end}}
+</div>
+</body>
+
+</html>
